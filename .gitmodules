@@ -1,0 +1,15 @@
+[submodule "vim/.vim/pack/plugins/start/surround"]
+	path = vim/.vim/pack/plugins/start/surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/.vim/pack/plugins/start/commentary"]
+	path = vim/.vim/pack/plugins/start/commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim/.vim/pack/plugins/start/fugitive"]
+	path = vim/.vim/pack/plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/.vim/pack/plugins/start/catppuccin"]
+	path = vim/.vim/pack/plugins/start/catppuccin
+	url = https://github.com/catppuccin/vim
+[submodule "vim/.vim/pack/plugins/start/ligthline"]
+	path = vim/.vim/pack/plugins/start/ligthline
+	url = https://github.com/itchyny/lightline.vim
