@@ -67,11 +67,11 @@ autocmd BufReadPost *
 " Quite a few people accidentally type 'q:' instead of ':q' and get confused by the command line window.
 " Give a hint about how to get out. If you don't like this you can put this in your vimrc: ':autocmd! vimHints'.
 augroup vimHints
-au!
-autocmd CmdwinEnter *
-	\ echohl Todo |
-	\ echo gettext('You discovered the command-line window! You can close it with ":q".') |
-	\ echohl None
+	au!
+	autocmd CmdwinEnter *
+		\ echohl Todo |
+		\ echo gettext('You discovered the command-line window! You can close it with ":q".') |
+		\ echohl None
 augroup END
 
 " Switch syntax highlighting on when the terminal has colors or when using the GUI (which always has colors).
