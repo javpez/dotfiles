@@ -47,7 +47,7 @@ if has('mouse')
 endif
 
 " Put these in an autocmd group, so that you can revert them with:
-" ":autocmd! vimStartup"
+" ':autocmd! vimStartup'
 augroup vimStartup
 autocmd!
 
@@ -64,8 +64,8 @@ autocmd BufReadPost *
 		\ execute "normal! g`\"" |
 	\ endif
 
-" Quite a few people accidentally type "q:" instead of ":q" and get confused by the command line window.
-" Give a hint about how to get out. If you don't like this you can put this in your vimrc: ":autocmd! vimHints".
+" Quite a few people accidentally type 'q:' instead of ':q' and get confused by the command line window.
+" Give a hint about how to get out. If you don't like this you can put this in your vimrc: ':autocmd! vimHints'.
 augroup vimHints
 au!
 autocmd CmdwinEnter *
@@ -75,7 +75,7 @@ autocmd CmdwinEnter *
 augroup END
 
 " Switch syntax highlighting on when the terminal has colors or when using the GUI (which always has colors).
-" Revert with ":syntax off".
+" Revert with ':syntax off'.
 if &t_Co > 2 || has("gui_running")
 	syntax on
 endif
@@ -134,8 +134,8 @@ packadd hlyank
 " --------------------------------------------------------------------------------------------------------------------- 
 " Plugins configuration
 " --------------------------------------------------------------------------------------------------------------------- 
-" - Plugins is a vim package located in ".vim/pack/" and consists on a list of arbitrary vim scripts.
-" - Note: Plugins under the ".vim/pack/plugins/start" directory will be automatically loaded during initialization.
+" - Plugins is a vim package located in '.vim/pack/' and consists on a list of arbitrary vim scripts.
+" - Note: Plugins under the '.vim/pack/plugins/start' directory will be automatically loaded during initialization.
 " --------------------------------------------------------------------------------------------------------------------- 
 
 " Catpuccin colorscheme (mocha flavour).
