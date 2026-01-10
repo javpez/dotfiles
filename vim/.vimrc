@@ -14,6 +14,8 @@ if &compatible
 	set nocompatible
 endif
 
+filetype plugin indent on
+
 " Show cursor position all the time
 set ruler
 
@@ -89,8 +91,6 @@ endif
 
 " Dont wrap lines
 set nowrap
-
-filetype plugin indent on
 
 " --------------------------------------------------------------------------------------------------------------------- 
 " Mappings
