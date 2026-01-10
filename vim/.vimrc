@@ -46,36 +46,33 @@ if has('mouse')
   endif
 endif
 
-" Only do this part when Vim was compiled with the +eval feature.
-if 1
-  " Put these in an autocmd group, so that you can revert them with:
-  " ":autocmd! vimStartup"
-  augroup vimStartup
-    autocmd!
+" Put these in an autocmd group, so that you can revert them with:
+" ":autocmd! vimStartup"
+augroup vimStartup
+autocmd!
 
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid, when inside an event handler (happens when dropping a file on gvim),
-    " for a commit or rebase message (likely a different one than last time), and when using xxd(1) to filter
-    " and edit binary files (it transforms input files back and forth, causing them to have dual nature, so to speak)
-    " or when running the new tutor
-    autocmd BufReadPost *
-      \ let line = line("'\"")
-      \ | if line >= 1 && line <= line("$") && &filetype !~# 'commit'
-      \      && index(['xxd', 'gitrebase', 'tutor'], &filetype) == -1
-      \      && !&diff
-      \ |   execute "normal! g`\""
-      \ | endif
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid, when inside an event handler (happens when dropping a file on gvim),
+" for a commit or rebase message (likely a different one than last time), and when using xxd(1) to filter
+" and edit binary files (it transforms input files back and forth, causing them to have dual nature, so to speak)
+" or when running the new tutor
+autocmd BufReadPost *
+	\ let line = line("'\"") |
+	\ if line >= 1 && line <= line("$") && &filetype !~# 'commit'
+		\ && index(['xxd', 'gitrebase', 'tutor'], &filetype) == -1
+		\ && !&diff |
+		\ execute "normal! g`\"" |
+	\ endif
 
-  " Quite a few people accidentally type "q:" instead of ":q" and get confused by the command line window.
-  " Give a hint about how to get out. If you don't like this you can put this in your vimrc: ":autocmd! vimHints".
-  augroup vimHints
-    au!
-    autocmd CmdwinEnter *
-	  \ echohl Todo |
-	  \ echo gettext('You discovered the command-line window! You can close it with ":q".') |
-	  \ echohl None
-  augroup END
-endif
+" Quite a few people accidentally type "q:" instead of ":q" and get confused by the command line window.
+" Give a hint about how to get out. If you don't like this you can put this in your vimrc: ":autocmd! vimHints".
+augroup vimHints
+au!
+autocmd CmdwinEnter *
+	\ echohl Todo |
+	\ echo gettext('You discovered the command-line window! You can close it with ":q".') |
+	\ echohl None
+augroup END
 
 " Switch syntax highlighting on when the terminal has colors or when using the GUI (which always has colors).
 " Revert with ":syntax off".
