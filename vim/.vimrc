@@ -35,6 +35,9 @@ set incsearch
 " Highlight search
 set hlsearch
 
+" Mark a soft limit for length of lines
+set colorcolumn=120
+
 " In many terminal emulators the mouse works just fine.
 " By enabling it you can position the cursor, visually select and scroll with the mouse.
 " Only xterm can grab the mouse events when using the shift key, for other terminals use ":", select text and press Esc.
