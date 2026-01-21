@@ -158,3 +158,8 @@ set noshowmode
 let g:lightline = {
 	\ 'colorscheme' : 'catppuccin_mocha',
 	\ }
+
+" Vimwiki
+let g:vimwiki_list = [{ 'syntax' : 'markdown',
+	\ 'ext' : 'md',
+	\ 'path' : '~/Notes' }]
