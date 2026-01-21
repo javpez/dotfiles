@@ -13,3 +13,6 @@
 [submodule "vim/.vim/pack/plugins/start/ligthline"]
 	path = vim/.vim/pack/plugins/start/ligthline
 	url = https://github.com/itchyny/lightline.vim
+[submodule "vim/.vim/pack/plugins/start/vimwiki"]
+	path = vim/.vim/pack/plugins/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
