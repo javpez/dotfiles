@@ -22,6 +22,10 @@ set ruler
 " Show line numbers
 set number
 
+" Spacing
+set tabstop=4
+set shiftwidth=4
+
 " Time out for key codes
 set ttimeout
 set ttimeoutlen=100
