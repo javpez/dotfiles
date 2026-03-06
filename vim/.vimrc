@@ -84,8 +84,7 @@ augroup END
 " Set local spell checking.
 augroup spellCheck
 	autocmd!
-	autocmd FileType gitcommit setlocal spell
-	autocmd FileType markdown setlocal spell
+	autocmd FileType gitcommit,markdown setlocal spell
 augroup END
 
 " Switch syntax highlighting on when the terminal has colors or when using the GUI (which always has colors).
