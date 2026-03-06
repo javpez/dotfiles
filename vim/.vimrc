@@ -87,6 +87,9 @@ augroup spellCheck
 	autocmd FileType gitcommit,markdown setlocal spell
 augroup END
 
+set spelllang=en,es
+set spelloptions=camel
+
 " Switch syntax highlighting on when the terminal has colors or when using the GUI (which always has colors).
 " Revert with ':syntax off'.
 if &t_Co > 2 || has("gui_running")
