@@ -123,7 +123,7 @@ nmap <silent> <leader>s <c-w>s
 " Split window (vertically)
 nmap <silent> <leader>v <c-w>v
 " Maximize current window size
-nmap <silent> <leader>E <c-w>\|<c-w>_
+nmap <silent> <leader>E <c-w>\|<c-w>_ <CR>
 " Resize windows equally
 nmap <silent> <leader>e <c-w>=
 " Close current window
