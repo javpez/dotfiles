@@ -16,3 +16,6 @@
 [submodule "vim/.vim/pack/plugins/start/vimwiki"]
 	path = vim/.vim/pack/plugins/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/.vim/pack/plugins/start/rust"]
+	path = vim/.vim/pack/plugins/start/rust
+	url = https://github.com/rust-lang/rust.vim.git
