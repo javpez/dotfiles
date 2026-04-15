@@ -36,7 +36,7 @@ Finally the option `-S <package-name>` will create the corresponding symbolic li
 its configuration effective.
 
 If I am updating the packages I would use the option `-R` instead.
-When moving an existing configuration to the dotfiles project I use the `--adopt` option. This should be use carefully, as the
+When moving an existing configuration to the dotfiles project I use the `--adopt` option. This should be used carefully, as the
 command documentation implies.
 
 There are many other useful options like `--simulate`. For further information and detailed description of concepts and usage,
