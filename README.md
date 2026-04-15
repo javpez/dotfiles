@@ -27,7 +27,7 @@ On a fresh install:
 stow -d path/to/dotfiles-repository/ -t path/to/target-directory/ -S <package-name>
 ```
 
-Where `path/to/dotfiles-repository` is the relative path to this project repository clone from my current working directory,
+Where `path/to/dotfiles-repository/` is the relative path to this project repository clone from my current working directory,
 `path/to/target-directory/` is the relative path to the directory where the configuration files for some tool should be.
 The former can be dependent on your distribution and, in some cases, there are more than one place where the program looks for configuration files.
 
