@@ -29,15 +29,14 @@ stow -d path/to/dotfiles-repository/ -t path/to/target-directory/ -S <package-na
 
 Where `path/to/dotfiles-repository` is the relative path to this project repository clone from my current working directory,
 `path/to/target-directory/` is the relative path to the directory where the configuration files for some tool should be.
-The former can be dependent on your distribution and, in some cases, there are more than one place where the program looks
-for configuration files.
+The former can be dependent on your distribution and, in some cases, there are more than one place where the program looks for configuration files.
 
-Finally the option `-S <package-name>` will create the corresponding symbolic links for the specified package and thus making
-its configuration effective.
+Finally the option `-S <package-name>` will create the corresponding symbolic links for the specified package and thus making its configuration effective.
 
 If I am updating the packages I would use the option `-R` instead.
-When moving an existing configuration to the dotfiles project I use the `--adopt` option. This should be used carefully, as the
-command documentation implies.
+When moving an existing configuration to the dotfiles project I use the `--adopt` option.
+This should be used carefully, as the command documentation implies.
 
-There are many other useful options like `--simulate`. For further information and detailed description of concepts and usage,
-please read the **stow** man pages.
+There are many other useful options like `--simulate`.
+
+For further information and detailed description of concepts and usage, please read the **stow** man pages.
